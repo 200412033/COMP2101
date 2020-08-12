@@ -1,0 +1,1 @@
+gwmi -class win32_product -filter "vendor!='microsoft Corporation'" | sort Installdate | ft Name,Vendor,version, installdate
